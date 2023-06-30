@@ -56,13 +56,13 @@ BEGIN
   
 NULL;
 END;
-----------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
 
-------------------------------
+
 select*from  TABLA_1  JOIN TABLA_2  on ID_pro = ID_TIPO JOIN TABLA_3  on ID_pro=ID_MARCA;
 
 select NOMBRE,MARCA from TABLA_1  inner JOIN TABLA_3  ON ID_pro = ID_MARCA;
@@ -78,15 +78,14 @@ SELECT TIPO FROM TABLA_1 JOIN TABLA_2 ON NUM_TIPO = ID_TIPO JOIN TABLA_3 ON NUM_
 where TIPO LIKE 'b%' or TIPO LIKE 'p%';
 
 
--------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO TABLA_1 VALUES('1','mexicana','500','1','1');
 INSERT INTO TABLA_1 VALUES('2','coca','400','2','2');
 INSERT INTO TABLA_1 VALUES('3','frijoles','200','3','3');
 INSERT INTO TABLA_1 VALUES('4','rex','100','4','4');
 INSERT INTO TABLA_1 VALUES('5','pasta','150','5','5');
 INSERT INTO TABLA_1 VALUES('6','frutra','110','6','6');
-INSERT INTO TABLA_1 VALUES('7','Refreco','25','7','7');-------------------------------------------------------------------inicia}
-
+INSERT INTO TABLA_1 VALUES('7','Refreco','25','7','7');
 INSERT INTO TABLA_1 VALUES('9','agua' ,'30','9','9');
 INSERT INTO TABLA_1 VALUES('10','agua','30','10','10');
 INSERT INTO TABLA_1 VALUES('11','agua','30','11','11');
@@ -109,7 +108,6 @@ INSERT INTO TABLA_1 VALUES('27','agua','30','27','27');
 INSERT INTO TABLA_1 VALUES('28','agua','30','28','28');
 INSERT INTO TABLA_1 VALUES('29','agua','30','29','29');
 INSERT INTO TABLA_1 VALUES('30','agua','30','30','30');
----------------------------------------------------------------------------------
 INSERT INTO TABLA_1 VALUES('31','frituras','15','31','31');
 INSERT INTO TABLA_1 VALUES('32','frituras','15','32','32');
 INSERT INTO TABLA_1 VALUES('33','frituras','15','33','33');
@@ -127,14 +125,8 @@ INSERT INTO TABLA_1 VALUES('44','frituras','15','44','44');
 INSERT INTO TABLA_1 VALUES('45','frituras','15','45','45');
 INSERT INTO TABLA_1 VALUES('46','frituras','15','46','46');
 INSERT INTO TABLA_1 VALUES('47','frituras','15','47','47');
-
-
------------------------------------------------------------------------------------------
 INSERT INTO TABLA_1 VALUES('48','fruta','20','48','48');
 INSERT INTO TABLA_1 VALUES('49','fruta','20','49','49');
-
-
--------------------------------------------------------------------------
 INSERT INTO TABLA_1 VALUES('50','tortas','49','8','8');
 INSERT INTO TABLA_1 VALUES('51','tortas','59','8','8');
 INSERT INTO TABLA_1 VALUES('52','tortas','59','8','8');
@@ -161,16 +153,12 @@ INSERT INTO TABLA_1 VALUES('72','tortas','59','8','8');
 INSERT INTO TABLA_1 VALUES('73','tortas','59','8','8');
 INSERT INTO TABLA_1 VALUES('74','tortas','59','8','8');
 INSERT INTO TABLA_1 VALUES('75','tortas','59','8','8');
-
------------------------------- 
--------------------------
-
 INSERT INTO TABLA_2 VALUES('1','pizza');
 INSERT INTO TABLA_2 VALUES('2','refeesco');
 INSERT INTO TABLA_2 VALUES('3','sopes');
 INSERT INTO TABLA_2 VALUES('4','barbacoa');
 INSERT INTO TABLA_2 VALUES('5','boloñesa');
-INSERT INTO TABLA_2 VALUES('6','simple');   ----------------------------------------------------------------------------
+INSERT INTO TABLA_2 VALUES('6','simple');   
 INSERT INTO TABLA_2 VALUES('7','cafe'); 
 INSERT INTO TABLA_2 VALUES('8','fresa'); 
 INSERT INTO TABLA_2 VALUES('9','papaya'); 
@@ -194,7 +182,6 @@ INSERT INTO TABLA_2 VALUES('27','arros');
 INSERT INTO TABLA_2 VALUES('28','abena');
 INSERT INTO TABLA_2 VALUES('29','tuna');
 INSERT INTO TABLA_2 VALUES('30','menta');
-
 INSERT INTO TABLA_2 VALUES('31','sabritas');
 INSERT INTO TABLA_2 VALUES('32','chetos');
 INSERT INTO TABLA_2 VALUES('33','doritos');
@@ -212,7 +199,6 @@ INSERT INTO TABLA_2 VALUES('44','chetos azules');
 INSERT INTO TABLA_2 VALUES('45','chetos verdes');
 INSERT INTO TABLA_2 VALUES('46','chetos naranja');
 INSERT INTO TABLA_2 VALUES('47','chetos blancos');
---------------------------------------------------
 INSERT INTO TABLA_2 VALUES('48','hagertina');
 INSERT INTO TABLA_2 VALUES('49','gringa');
 INSERT INTO TABLA_2 VALUES('50','hawayana');
@@ -248,10 +234,7 @@ INSERT INTO TABLA_2 VALUES('77','cahuama');
 INSERT INTO TABLA_2 VALUES('78','ropa','259');
 INSERT INTO TABLA_2 VALUES('79','condones');
 INSERT INTO TABLA_2 VALUES('80','condones');
----------------------------------------------
-
-
-INSERT INTO TABLA_2 VALUES('10','banana');
+-------------------------------------------------------------- prodcutos que no estan relaccionados
 SELECT * FROM TABLA_2;
 -------------------------
 INSERT INTO TABLA_3 VALUES('1','dominos');
@@ -260,7 +243,7 @@ INSERT INTO TABLA_3 VALUES('3','la costeña');
 INSERT INTO TABLA_3 VALUES('4','la doña');
 INSERT INTO TABLA_3 VALUES('5','valses');
 INSERT INTO TABLA_3 VALUES('6','mercado');
-INSERT INTO TABLA_3 VALUES('7','La_doña');-------------------------------------------------------------------------
+INSERT INTO TABLA_3 VALUES('7','La_doña');
 INSERT INTO TABLA_3 VALUES('8','La_doña');
 INSERT INTO TABLA_3 VALUES('9','La_doña');
 INSERT INTO TABLA_3 VALUES('10','La_doña');
@@ -284,7 +267,6 @@ INSERT INTO TABLA_3 VALUES('27','La_doña');
 INSERT INTO TABLA_3 VALUES('28','La_doña');
 INSERT INTO TABLA_3 VALUES('29','La_doña');
 INSERT INTO TABLA_3 VALUES('30','La_doña');
------------------------------
 INSERT INTO TABLA_3 VALUES('31','sabritas');
 INSERT INTO TABLA_3 VALUES('32','sabritas');
 INSERT INTO TABLA_3 VALUES('33','sabritas');
@@ -302,11 +284,9 @@ INSERT INTO TABLA_3 VALUES('44','chestrer');
 INSERT INTO TABLA_3 VALUES('45','chestrer');
 INSERT INTO TABLA_3 VALUES('46','chestrer');
 INSERT INTO TABLA_3 VALUES('47','chestrer');
----------------------------------------------------
 INSERT INTO TABLA_3 VALUES('48','señora');
 INSERT INTO TABLA_3 VALUES('49','señora');
 INSERT INTO TABLA_3 VALUES('50','señora');
-----------------------------------
 INSERT INTO TABLA_3 VALUES('51','señor');
 INSERT INTO TABLA_3 VALUES('52','señor');
 INSERT INTO TABLA_3 VALUES('53','señor');
@@ -333,7 +313,7 @@ INSERT INTO TABLA_3 VALUES('73','señor');
 INSERT INTO TABLA_3 VALUES('74','señor');
 INSERT INTO TABLA_3 VALUES('75','señor');
 
----------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 INSERT INTO TABLA_3 VALUES('76','caverna');
 INSERT INTO TABLA_3 VALUES('77','caverna');
@@ -341,4 +321,4 @@ INSERT INTO TABLA_3 VALUES('78','caverna');
 INSERT INTO TABLA_3 VALUES('79','caverna');
 INSERT INTO TABLA_3 VALUES('80','caverna');
 
----------------nombre y precio tabla 1 tabla 2 marca 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
